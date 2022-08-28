@@ -7,14 +7,14 @@ These Data Stuctures were assignments for an [Algorithms and Programming](https:
 ## Commands and Usage
 In order to test each data structure, you will need to compile the source code ([GCC](https://gcc.gnu.org/) was the compiler that I personally used). If you are using GCC, compile the tests with:
 ```
-        gcc -g -std=c99 -Wall -Wconversion -Wno-sign-conversion -Werror -o pruebas *.c
+gcc -g -std=c99 -Wall -Wconversion -Wno-sign-conversion -Werror -o pruebas *.c
 ```
-In order to find out if there were any memory leaks, [Valgrind]() was used:
+In order to find out if there were any memory leaks, [Valgrind](https://valgrind.org/) was used:
 ```
-        valgrind --leak-check=full --track-origins=yes --show-reachable=yes ./pruebas
+valgrind --leak-check=full --track-origins=yes --show-reachable=yes ./pruebas
 ```
 
 Finally, to run the tests simply execute the compiled test on your command line:
 ```
-        ./pruebas
+./pruebas
 ```
